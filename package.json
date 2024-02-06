@@ -1,6 +1,6 @@
 {
-  "name": "c_remver",
-  "version": "1.0.1",
+  "name": "c_semver",
+  "version": "1.0.0",
   "description": "The semantic version parser used by npm.",
   "main": "index.js",
   "scripts": {
