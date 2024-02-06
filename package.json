@@ -1,5 +1,5 @@
 {
-  "name": "c_semver",
+  "name": "c-semver",
   "version": "1.0.0",
   "description": "The semantic version parser used by npm.",
   "main": "index.js",

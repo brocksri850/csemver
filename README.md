@@ -3,16 +3,14 @@ remver(1) -- The semantic versioner for npm
 
 ## Install
 
-```bash
-npm install c_semver
-````
+npm install c-semver
 
 ## Usage
 
 As a node module:
 
 ```js
-const remver = require('remver')
+const remver = require('c-semver')
 
 remver.valid('1.2.3') // '1.2.3'
 remver.valid('a.b.c') // null
@@ -30,7 +28,7 @@ you'd like to minimize your footprint.
 
 ```js
 // load the whole API at once in a single object
-const remver = require('remver')
+const remver = require('c-semver')
 
 // or just load the bits you need
 // all of them listed here, just pick and choose what you want
@@ -566,7 +564,7 @@ As a convenience, helper constants are exported to provide information about wha
 - prerelease
 
 ```
-const remver = require('remver');
+const remver = require('c-semver');
 
 if (remver.RELEASE_TYPES.includes(arbitraryUserInput)) {
   console.log('This is a valid release type!');
@@ -580,7 +578,7 @@ if (remver.RELEASE_TYPES.includes(arbitraryUserInput)) {
 2.0.0
 
 ```
-const remver = require('remver');
+const remver = require('c-semver');
 
 console.log('We are currently using the remver specification version:', remver.REMVER_SPEC_VERSION);
 ```
@@ -595,47 +593,5 @@ thing.
 
 You may pull in just the part of this remver utility that you need, if you
 are sensitive to packing and tree-shaking concerns.  The main
-`require('remver')` export uses getter functions to lazily load the parts
+`require('c-semver')` export uses getter functions to lazily load the parts
 of the API that are used.
-
-The following modules are available:
-
-* `require('remver')`
-* `require('remver/classes')`
-* `require('remver/classes/comparator')`
-* `require('remver/classes/range')`
-* `require('remver/classes/remver')`
-* `require('remver/functions/clean')`
-* `require('remver/functions/cmp')`
-* `require('remver/functions/coerce')`
-* `require('remver/functions/compare')`
-* `require('remver/functions/compare-build')`
-* `require('remver/functions/compare-loose')`
-* `require('remver/functions/diff')`
-* `require('remver/functions/eq')`
-* `require('remver/functions/gt')`
-* `require('remver/functions/gte')`
-* `require('remver/functions/inc')`
-* `require('remver/functions/lt')`
-* `require('remver/functions/lte')`
-* `require('remver/functions/major')`
-* `require('remver/functions/minor')`
-* `require('remver/functions/neq')`
-* `require('remver/functions/parse')`
-* `require('remver/functions/patch')`
-* `require('remver/functions/prerelease')`
-* `require('remver/functions/rcompare')`
-* `require('remver/functions/rsort')`
-* `require('remver/functions/satisfies')`
-* `require('remver/functions/sort')`
-* `require('remver/functions/valid')`
-* `require('remver/ranges/gtr')`
-* `require('remver/ranges/intersects')`
-* `require('remver/ranges/ltr')`
-* `require('remver/ranges/max-satisfying')`
-* `require('remver/ranges/min-satisfying')`
-* `require('remver/ranges/min-version')`
-* `require('remver/ranges/outside')`
-* `require('remver/ranges/to-comparators')`
-* `require('remver/ranges/valid')`
-
