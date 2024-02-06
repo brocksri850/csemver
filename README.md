@@ -4,7 +4,7 @@ remver(1) -- The semantic versioner for npm
 ## Install
 
 ```bash
-npm install remver
+npm install c_remver
 ````
 
 ## Usage
